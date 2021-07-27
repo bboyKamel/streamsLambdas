@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
@@ -18,11 +19,14 @@ public class Main {
     }
 
     public static List<Object> myRepo(){
-        List<Object> exStrList = new ArrayList<>();
+        List<Object> exStrList = new ArrayList();
             exStrList.add("wacław");
             exStrList.add("rusłan");
             exStrList.add("tobiasz");
             exStrList.add("rusłan");
+            exStrList.add(7);
+            exStrList.add(3);
+            exStrList.add(7);
         return exStrList;
     }
 }

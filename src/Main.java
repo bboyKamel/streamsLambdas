@@ -13,12 +13,12 @@ public class Main {
     }
 
 
-    public static Map<String, Long> countElements(List<String> toCountList) {
+    public static Map<Object, Long> countElements(List<Object> toCountList) {
         return toCountList.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
     }
 
-    public static List<String> myRepo(){
-        List<String> exStrList = new ArrayList<>();
+    public static List<Object> myRepo(){
+        List<Object> exStrList = new ArrayList<>();
             exStrList.add("wacław");
             exStrList.add("rusłan");
             exStrList.add("tobiasz");
